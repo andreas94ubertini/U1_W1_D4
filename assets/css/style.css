@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800&display=swap");
+
+@media only screen and (max-device-width: 500px) {
+  /* IMPOSTAZIONI GENERALI */
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 5% auto;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  p {
+    margin: 5% auto;
+  }
+
+  ol {
+    margin-bottom: 3%;
+  }
+
+  html {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+  }
+
+  body {
+    background-image: url(../img/sfondo.png);
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  header,
+  main,
+  footer {
+    box-shadow: -1px 2px 0px 0px rgba(0, 0, 0, 0.53);
+  }
+
+  /* HEADER */
+  header {
+    height: 13rem;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    border: 1px solid black;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 230, 233, 1) 14%,
+      rgba(0, 133, 155, 1) 46%
+    );
+  }
+
+  #logo-epicode {
+    margin: 5% auto;
+    width: 55%;
+  }
+
+  .menu {
+    list-style: none;
+    margin-top: 5%;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* MAIN */
+  main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    margin: 5% auto;
+  }
+
+  main li {
+    margin-left: 8%;
+  }
+
+  /* ELEMENTI NEL MAIN - ARTICLE */
+
+  /* TABELLE */
+  caption {
+    font-weight: bold;
+  }
+
+  table {
+    border-bottom: 1px solid rgb(54, 54, 254);
+    border-collapse: separate;
+    border-spacing: 1px;
+  }
+
+  th {
+    background-color: rgb(54, 54, 254);
+  }
+
+  th,
+  td,
+  tr {
+    text-align: center;
+    padding: 0.5em;
+    margin: 1%;
+  }
+
+  tr:nth-child(even) {
+    background-color: #d4d4d4;
+  }
+
+  tr:nth-of-type(2),
+  tr:nth-of-type(4) {
+    border-top: 1px solid darkgrey;
+    border-bottom: 1px solid darkgray;
+  }
+
+  /* FORM */
+
+  /* ELEMENTI NELL' ASIDE */
+
+  /* FOOTER */
+}
