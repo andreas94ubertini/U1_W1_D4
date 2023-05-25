@@ -14,23 +14,24 @@
 </head>
 
 <body>
+    <header>
+        <img id="logo-epicode" src="./assets/img/logo.svg" width="100px" alt="" />
+        <h2>Epicode - il blog dei developers</h2>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Articoli</a></li>
+                <li><a href="#">Lavora con noi</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
-        <header>
-            <img id="logo-epicode" src="./assets/img/logo.svg" width="100px" alt="" />
-            <h2>Epicode - il blog dei developers</h2>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Articoli</a></li>
-                    <li><a href="#">Lavora con noi</a></li>
-                </ul>
-            </nav>
-        </header>
         <main>
             <section>
                 <article>
                     <h1>Come creare un template per i post</h1>
-                    <p> <i class="fas fa-pen-square"></i> di Mario Rossi - <i class="fas fa-clock"></i> pubblicato il 25-10-2020</p>
+                    <p> <i class="fas fa-pen-square"></i> di Mario Rossi - <i class="fas fa-clock"></i> pubblicato il
+                        25-10-2020</p>
 
                     <p>
                         La prima cosa da fare è suddividere in gruppi logici la pagina,
@@ -39,14 +40,14 @@
                     <p>
                         Le varie aree saranno quindi suddivise in:
                     <ul>
-                        <li>Contenuti di intestazione del tag  <code>&lt;header></code> </li>
+                        <li>Contenuti di intestazione del tag <code>&lt;header></code> </li>
                         <li>Contenuti centrali variabili del tag <code>&lt;main></code> (corpo principale)</li>
                         <li>Contenuti di fine pagina comuni, da inserire nel tag <code>&lt;footer></code></li>
                     </ul>
 
                     </p>
-                    <h3>Formattazione del codice</h3>
                     <p>
+                        Formattazione del codice <br>
                         Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare
                         con i
                         CSS. Perciò i passi saranno:
@@ -96,50 +97,57 @@
                         </tbody>
                     </table>
                     <p>
-                        Un test di validazione potrà essere fatto tramite il <a href="#">tool online</a> 
+                        Un test di validazione potrà essere fatto tramite il <a href="#">tool online</a>
                         dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro
                         obiettivo ed essere stati dei veri developers come loro:
-                        <iframe title="video" width="300" height="200" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                        </iframe>
                     </p>
+                    <iframe title="video" width="300" height="200" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
                 </article>
             </section>
-            <section class="">
-                <h3>Vuoi rimanere sempre aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</h3>
+            <section class="newsletter">
+                <h3>NOVITÀ</h3>
+                <p>Vuoi rimanere sempre aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
                 <form action="POST">
-                    <label for="email">Inserisci l'email</label>
-                    <input id="email" type="email">
-                    <input type="submit" value="Iscriviti!">
+                    <input class="form" id="email" type="email" placeholder="inserisci l'email">
+                    <input class="button" type="submit" value="Iscriviti!">
                 </form>
             </section>
         </main>
         <aside>
             <h2>Articoli correlati</h2>
-            <p class="correlati"><a href="#">Validare il codice HTML</a> <br>
-                <i class="fas fa-tag"></i>
-                Categoria: developer <br>
-                Data 18-9-2020 <br>
-            </p>
-            <p class="correlati"><a href="#">Correggere la sintassi</a> <br>
-                <i class="fas fa-tag"></i>
-                Categoria: developer <br>
-                Data 16-9-2020 <br>
-            </p>
-            <p class="correlati"><a href="#">Meno Kb nella pagina</a> <br>
-                <i class="fas fa-tag"></i>
-                 Categoria: ottimizzazione <br>
-                Data 30-9-2020 <br>
-            </p>
+            <div class="articolo">
+                <p class="correlati"><a href="#">Validare il codice HTML</a> <br>
+                    <i class="fas fa-tag"></i>
+                    Categoria: develop
+                </p>
+                <span class="destra"><i class="fas fa-calendar-alt"></i>Data:18-9-2020</span>
+            </div>
+            <div class="articolo">
+                <p class="correlati"><a href="#">Correggere la sintassi</a> <br>
+                    <i class="fas fa-tag"></i>
+                    Categoria: develop
+                </p>
+                <span class="destra"><i class="fas fa-calendar-alt"></i>Data:16-9-2020</span>
+            </div>
+            <div class="articolo">
+                <p class="correlati"><a href="#">Meno Kb nella pagina</a> <br>
+                    <i class="fas fa-tag"></i>
+                    Categoria: ottimizzazione
+                </p>
+                <span class="destra"><i class="fas fa-calendar-alt"></i>Data:30-9-2020</span>
+            </div>
         </aside>
-        <footer>
-            <h3>Blog epicode &copy;2023</h3>
-            <p>Testata online di Mario Rossi, registrata con prot n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA
-                00112233.
-                <br>
-                <a href="mailto:email@example.com">info@epicode.school</a>
-            </p>
-        </footer>
     </div>
+    <footer>
+        <h3>Blog epicode &copy;2023</h3>
+        <p>Testata online di Mario Rossi, registrata con prot n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA
+            00112233.
+            <br>
+            <a class="mail-to" href="mailto:email@example.com">info@epicode.school</a>
+        </p>
+    </footer>
+
 </body>
 
 </html>
