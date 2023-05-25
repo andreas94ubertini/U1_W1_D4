@@ -91,7 +91,17 @@
     margin-left: 8%;
   }
 
+  code {
+    background-color: lightgrey;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+  }
+
   /* ELEMENTI NEL MAIN - ARTICLE */
+  .gray {
+    color: gray;
+  }
+
   iframe {
     border-radius: 15px;
     margin-left: 1%;
